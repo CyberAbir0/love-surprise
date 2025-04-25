@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love For You</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      overflow-x: hidden;
+    }
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      color: #d63384;
+      margin-bottom: 20px;
+      animation: fadeSlide 3s ease-in-out;
+    }
+    p.quote {
+      font-size: 1.3rem;
+      color: #444;
+      margin-bottom: 40px;
+      animation: fadeInUp 3s ease-in;
+    }
+    .heart {
+      animation: beat 1s infinite;
+      font-size: 60px;
+      color: red;
+    }
+    @keyframes beat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+    @keyframes fadeSlide {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .flowers, .birds, .butterfly, .teddy {
+      position: absolute;
+      width: 100px;
+      height: auto;
+    }
+    .flowers {
+      bottom: 10px;
+      left: 20px;
+      animation: floatFlower 6s infinite ease-in-out;
+    }
+    .birds {
+      top: 20px;
+      right: 20px;
+      animation: flyBird 10s linear infinite;
+    }
+    .butterfly {
+      top: 50%;
+      left: -100px;
+      animation: flyButterfly 15s linear infinite;
+    }
+    .teddy {
+      bottom: 20px;
+      right: 20px;
+      animation: bounceTeddy 4s infinite;
+    }
+    @keyframes flyButterfly {
+      0% { left: -100px; top: 50%; }
+      50% { left: 50%; top: 40%; }
+      100% { left: 110%; top: 60%; }
+    }
+    @keyframes floatFlower {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes flyBird {
+      0% { right: -100px; top: 20px; }
+      100% { right: 110%; top: 30px; }
+    }
+    @keyframes bounceTeddy {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+    .love-letter {
+      background: rgba(255,255,255,0.9);
+      padding: 25px;
+      border-radius: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeInUp 3s ease-in-out;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #333;
+    }
+    audio {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.ibb.co/gdgzk5s/flower.png" class="flowers" alt="flowers">
+    <img src="https://i.ibb.co/h9PgkKz/bird.png" class="birds" alt="birds">
+    <img src="https://i.ibb.co/p2zHC8F/butterfly.png" class="butterfly" alt="butterfly">
+    <img src="https://i.ibb.co/m0g4nXr/teddy.png" class="teddy" alt="teddy"><h1>For the Queen of My Heart</h1>
+<p class="quote">"You're the reason I smile a little brighter, breathe a little deeper, and love a little stronger every day."</p>
+<div class="heart">❤️</div>
+
+<div class="love-letter">
+  <p>From the moment you walked into my life, everything changed. The world became softer, warmer, more beautiful — because you were in it.</p>
+  <p>I never believed in fairytales until I met you. Now every moment with you feels like a chapter from the most beautiful love story ever written.</p>
+  <p>Your voice is my favorite sound, your name is my favorite word, and your smile is my favorite sight.</p>
+  <p style="font-family: 'Great Vibes', cursive; font-size: 1.5rem; color: #e84393; animation: fadeSlide 4s ease-in-out;">— With all my heart, Captain T3RROR</p>
+</div>
+
+<footer>
+  &copy; 2025 Coded by <strong>Captain T3RROR</strong>
+</footer>
+
+  </div>  <audio controls autoplay loop>
+    <source src="https://dl.sndup.net/4r4z/Purnota%20-%20Minar.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
